@@ -39,11 +39,11 @@ const projects: Project[] = [
     [
       [
         "EN",
-        "WBS Coding School final project - SnapTask is a versatile SaaS platform that uses QR code technology to streamline task management for businesses and households. This repository contains the backend code for SnapTask. The platform provides a comprehensive admin dashboard for managing tasks, users, and areas, while also offering a mobile-friendly interface for staff to easily interact with tasks.",
+        "WBS Coding School final project - SnapTask is a versatile SaaS platform that uses QR code technology to streamline task management for businesses and households. The platform provides a comprehensive admin dashboard for managing tasks, users, and areas, while also offering a mobile-friendly interface for staff to easily interact with tasks.",
       ],
       [
         "DE",
-        "WBS Coding School Abschlussprojekt - SnapTask ist eine vielseitige SaaS-Plattform, die QR-Code-Technologie verwendet, um die Aufgabenverwaltung für Unternehmen und Haushalte zu optimieren. Dieses Repository enthält den Backend-Code für SnapTask. Die Plattform bietet ein umfassendes Admin-Dashboard zur Verwaltung von Aufgaben, Benutzern und Bereichen und bietet gleichzeitig eine benutzerfreundliche Oberfläche für Mitarbeiter, um einfach mit Aufgaben zu interagieren.",
+        "WBS Coding School Abschlussprojekt - SnapTask ist eine vielseitige SaaS-Plattform, die QR-Code-Technologie verwendet, um die Aufgabenverwaltung für Unternehmen und Haushalte zu optimieren. Die Plattform bietet ein umfassendes Admin-Dashboard zur Verwaltung von Aufgaben, Benutzern und Bereichen und bietet gleichzeitig eine benutzerfreundliche Oberfläche für Mitarbeiter, um einfach mit Aufgaben zu interagieren.",
       ],
     ]
   ),
