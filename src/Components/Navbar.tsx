@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ThemesSwap from "./ThemesSwap";
+import ThemesSwap from "./ThemesSwap.tsx";
 
 export default function Navbar() {
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
