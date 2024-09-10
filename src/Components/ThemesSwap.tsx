@@ -1,10 +1,12 @@
-import React, { useEffect, useContext } from "react";
-
-const storageKey = "snap-task-theme";
-export const themesSwap = ["winter", "dim"];
+import React, { useEffect } from "react";
 
 export default function ThemesSwap() {
-  const [theme, setTheme] = React.useState(JSON.parse(localStorage.getItem(storageKey)) || themesSwap[0]);
+  const storageKey = "snap-task-theme";
+  const themesSwap = ["winter", "dim"];
+  const [theme, setTheme] = React.useState(() => {
+    const storedTheme = localStorage.getItem(storageKey);
+    return storedTheme ? JSON.parse(storedTheme) : themesSwap[0];
+  });
 
   useEffect(() => {
     loadThemeFromStorage();
@@ -15,16 +17,19 @@ export default function ThemesSwap() {
   };
 
   function loadThemeFromStorage() {
-    applyTheme(JSON.parse(localStorage.getItem(storageKey)) || themesSwap[0]);
+    const storedTheme = localStorage.getItem(storageKey);
+    applyTheme(storedTheme ? JSON.parse(storedTheme) : themesSwap[0]);
   }
 
-  function applyTheme(theme) {
-    document.querySelector("html").setAttribute("data-theme", theme);
+  function applyTheme(theme: string) {
+    const htmlElement = document.querySelector("html");
+    if (htmlElement) htmlElement.setAttribute("data-theme", theme);
+
     localStorage.setItem(storageKey, JSON.stringify(theme));
     setTheme(theme);
   }
 
-  function handleSwap(e) {
+  function handleSwap(e: React.ChangeEvent<HTMLInputElement>) {
     e.target.checked = !e.target.checked;
     e.target.checked ? applyTheme(themesSwap[1]) : applyTheme(themesSwap[0]);
   }
@@ -44,7 +49,13 @@ export default function ThemesSwap() {
         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
       </svg>
 
-      <input type="checkbox" onChange={handleSwap} checked={theme === themesSwap[0] ? true : false} className="toggle theme-controller" />
+      <input
+        type="checkbox"
+        onChange={handleSwap}
+        checked={theme === themesSwap[0] ? true : false}
+        className="toggle theme-controller"
+        title="Toggle theme"
+      />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
