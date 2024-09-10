@@ -1,4 +1,4 @@
-export default function PageNotFound() {
+export default function NotFound() {
   return (
     <div className="bg-[#16181e] h-[100vh]">
       <section className="mx-auto max-w-[1120px] container py-12 ">

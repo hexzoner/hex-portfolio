@@ -4,7 +4,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import ProjectDetails from "./Components/ProjectDetails";
 import MainLayout from "./Layout/MainLayout";
-import PageNotFound from "./Components/PageNotFound.tsx";
+import NotFound from "./Components/NotFound.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,7 +13,7 @@ const router = createBrowserRouter(
 
       <Route path="about" element={<About />} />
       <Route path="project/:id" element={<ProjectDetails />} />
-      <Route path="*" element={<PageNotFound />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
