@@ -7,7 +7,7 @@ export default function Home() {
       <p className="text-3xl ">My Portfolio</p>
       <div className="max-w-screen-xl m-auto h-full px-4">
         <section className="py-8">
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}

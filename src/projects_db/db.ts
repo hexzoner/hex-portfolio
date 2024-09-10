@@ -21,7 +21,7 @@ export class Project {
 const projects: Project[] = [
   new Project(
     "SnapTask",
-    "SnapTask is a versatile SaaS platform that uses QR code technology to streamline task management for businesses and households. This repository contains the frontend code for SnapTask, built using React, Vite, and Tailwind CSS. The platform provides a comprehensive admin dashboard for managing tasks, users, and areas, while also offering a mobile-friendly interface for staff to easily interact with tasks.",
+    "WBS Coding School final project - SnapTask is a versatile SaaS platform that uses QR code technology to streamline task management for businesses and households. This repository contains the frontend code for SnapTask, built using React, Vite, and Tailwind CSS. The platform provides a comprehensive admin dashboard for managing tasks, users, and areas, while also offering a mobile-friendly interface for staff to easily interact with tasks.",
     "https://i.gyazo.com/0fd67c66dac08d472af11cc1722f7d5d.png",
     "https://app-snaptask.onrender.com/",
     "https://serhii-tyshchenko.netlify.app/",
@@ -29,8 +29,10 @@ const projects: Project[] = [
   ),
   new Project(
     "Pokemon game",
-    `Simple Pokemon card game built with React, Vite, and Tailwind CSS. The game fetches data from the Pokemon API and allows users to battle against the computer.
-     The game provides a fun and interactive experience for users.`,
+    `Simple Pokemon card game built with React, Vite, and Tailwind CSS.
+     The game fetches data from the Pokemon API and allows users to battle against the computer.
+     The game provides a fun and interactive experience for users.
+     The leaderboard feature allows users to track their scores and compete with other players.`,
     "https://i.gyazo.com/475f3b8d8fc81eda42cf073ddde1b194.png",
     "https://pokemon-battlegame.onrender.com/",
     "https://serhii-tyshchenko.netlify.app/",

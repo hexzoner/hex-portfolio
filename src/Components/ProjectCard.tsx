@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <p className="px-4 text-justify">{project.description}</p>
         <div className="flex flex-wrap gap-2 px-3">
           {project.tags.map((tag) => (
-            <span key={tag} className="bg-secondary text-secondary-content text-sm font-semibold py-1 px-4 rounded-full">
+            <span key={tag} className="btn btn-outline btn-secondary text-sm font-semibold py-1 px-4 rounded-full">
               {tag}
             </span>
           ))}
