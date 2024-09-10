@@ -6,7 +6,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="bg-base-300 text-primary py-4 flex flex-col gap-2 rounded-xl">
+    <div className="bg-base-300  py-4 flex flex-col gap-2 rounded-xl">
       <p className="text-xl font-semibold">{project.title}</p>
       <img src={project.image} alt="" />
       <div className="flex flex-col justify-between h-full gap-4">
@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           target="_blank"
           rel="noopener noreferrer"
           className="bg-primary text-primary-content text-lg font-semibold py-2 mx-4 hover:opacity-75">
-          Visit Project
+          Visit Website
         </a>
       </div>
     </div>
