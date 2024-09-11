@@ -6,14 +6,14 @@ export class Project {
   tags: string[];
   image: string;
   link: string;
-  gitHubLink: string;
+  gitHubLink: GitHubProject[];
 
   constructor(
     title: string,
     description: string,
     image: string,
     link: string,
-    gitHubLink: string,
+    gitHubLink: GitHubProject[],
     tags: string[] = [],
     projectInfo: [string, string][]
   ) {
@@ -28,22 +28,40 @@ export class Project {
   }
 }
 
+export enum RepoType {
+  "Frontend Repo",
+  "Backend Repo",
+}
+
+class GitHubProject {
+  type: RepoType;
+  url: string;
+
+  constructor(type: RepoType, url: string) {
+    this.type = type;
+    this.url = url;
+  }
+}
+
 const projects: Project[] = [
   new Project(
     "SnapTask",
     "WBS Coding School final project - SnapTask is a versatile SaaS platform that uses QR code technology to streamline task management for businesses and households. This repository contains the frontend code for SnapTask, built using React, Vite, and Tailwind CSS. The platform provides a comprehensive admin dashboard for managing tasks, users, and areas, while also offering a mobile-friendly interface for staff to easily interact with tasks.",
     "https://i.gyazo.com/0fd67c66dac08d472af11cc1722f7d5d.png",
     "https://app-snaptask.onrender.com/",
-    "https://serhii-tyshchenko.netlify.app/",
+    [
+      new GitHubProject(RepoType["Frontend Repo"], "https://github.com/SebSchoeneberger/SnapTask-Fe"),
+      new GitHubProject(RepoType["Backend Repo"], "https://github.com/hexzoner/final-project-be"),
+    ],
     ["React.js", "Vite", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "DaisyUI"],
     [
       [
         "EN",
-        "WBS Coding School final project - SnapTask is a versatile SaaS platform that uses QR code technology to streamline task management for businesses and households. The platform provides a comprehensive admin dashboard for managing tasks, users, and areas, while also offering a mobile-friendly interface for staff to easily interact with tasks.",
+        "The result of the close, day-to-day collaboration of four team members, WBS Coding School's final project, SnapTask, is a versatile SaaS platform that uses QR code technology to streamline task management for businesses and households. The platform provides a comprehensive admin dashboard for managing tasks, users, and areas, while also offering a mobile-friendly interface for staff to easily interact with tasks.",
       ],
       [
         "DE",
-        "WBS Coding School Abschlussprojekt - SnapTask ist eine vielseitige SaaS-Plattform, die QR-Code-Technologie verwendet, um die Aufgabenverwaltung für Unternehmen und Haushalte zu optimieren. Die Plattform bietet ein umfassendes Admin-Dashboard zur Verwaltung von Aufgaben, Benutzern und Bereichen und bietet gleichzeitig eine benutzerfreundliche Oberfläche für Mitarbeiter, um einfach mit Aufgaben zu interagieren.",
+        "Das Ergebnis der engen, täglichen Zusammenarbeit von vier Teammitgliedern, das Abschlussprojekt der WBS Coding School, SnapTask, ist eine vielseitige SaaS-Plattform, die QR-Code-Technologie nutzt, um das Aufgabenmanagement für Unternehmen und Haushalte zu optimieren. Die Plattform bietet ein umfassendes Admin-Dashboard zur Verwaltung von Aufgaben, Benutzern und Bereichen und bietet gleichzeitig eine benutzerfreundliche Oberfläche für Mitarbeiter, um einfach mit Aufgaben zu interagieren.",
       ],
     ]
   ),
@@ -55,7 +73,10 @@ const projects: Project[] = [
      The leaderboard feature allows users to track their scores and compete with other players.`,
     "https://i.gyazo.com/475f3b8d8fc81eda42cf073ddde1b194.png",
     "https://pokemon-battlegame.onrender.com/",
-    "https://serhii-tyshchenko.netlify.app/",
+    [
+      new GitHubProject(RepoType["Frontend Repo"], "https://github.com/SebSchoeneberger/SnapTask-Fe"),
+      new GitHubProject(RepoType["Backend Repo"], "https://github.com/hexzoner/final-project-be"),
+    ],
     ["React.js", "Vite", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
     [
       [
@@ -73,7 +94,7 @@ const projects: Project[] = [
     "This is a movie website that fetches data from the TMDB API. The website provides a user-friendly interface for users to browse movies, view movie details, and search for movies.",
     "https://i.gyazo.com/cebd23f48200db23afeccbe5676ad5ff.jpg",
     "https://movie-diary-r.onrender.com/",
-    "https://serhii-tyshchenko.netlify.app/",
+    [new GitHubProject(RepoType["Frontend Repo"], "https://github.com/SebSchoeneberger/SnapTask-Fe")],
     ["React.js", "Vite", "Tailwind CSS", "TMDB API"],
     [
       [

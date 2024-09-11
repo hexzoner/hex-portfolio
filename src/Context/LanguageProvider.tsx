@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { ReactNode } from "react";
 
 interface LanguageContextProps {
   language: string;
@@ -9,8 +10,6 @@ export const LanguageContext = createContext<LanguageContextProps>({
   language: "EN",
   setLanguage: () => {},
 });
-
-import { ReactNode } from "react";
 
 const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState("EN");
