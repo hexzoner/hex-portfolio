@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { ReactNode } from "react";
+import { restoreLanguage } from "../utils/storage";
 
 interface LanguageContextProps {
   language: string;
@@ -7,12 +8,12 @@ interface LanguageContextProps {
 }
 
 export const LanguageContext = createContext<LanguageContextProps>({
-  language: "EN",
+  language: "DE",
   setLanguage: () => {},
 });
 
 const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState("EN");
+  const [language, setLanguage] = useState(restoreLanguage() || "DE");
   return <LanguageContext.Provider value={{ language, setLanguage }}>{children}</LanguageContext.Provider>;
 };
 

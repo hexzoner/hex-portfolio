@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { LanguageContext } from "../Context/LanguageProvider.tsx";
+import { storeLanguage } from "../utils/storage.ts";
 
 export default function LanguageToggle() {
   const { language, setLanguage } = useContext(LanguageContext);
@@ -7,6 +8,7 @@ export default function LanguageToggle() {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = e.target.value;
     setLanguage(selectedLanguage);
+    storeLanguage(selectedLanguage);
   };
 
   return (
