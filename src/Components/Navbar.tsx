@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="navbar max-w-screen-xl m-auto">
         <div className="flex-1">
           <NavLink to="/" className={navLinkClass}>
-            Home
+            Projects
           </NavLink>
           <NavLink to="/about" className={navLinkClass}>
             About
