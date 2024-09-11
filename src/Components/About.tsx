@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { LanguageContext } from "../Context/LanguageProvider";
-import meFullSize from "../assets/meFullSize.jpg";
+import me from "../assets/meFullSize.jpg";
+// import me from "../assets/me_resized_darker.jpg";
 // import meDarkBg from "../assets/meDarkBg.jpg";
 
 export default function About() {
@@ -41,8 +42,8 @@ export default function About() {
   ]);
 
   const technologies: Map<string, string> = new Map([
-    ["EN", "This page is built using: React.js, Typescript, TailwindCSS + DaisyUI"],
-    ["DE", "Diese Seite wurde erstellt mit: React.js, Typescript, TailwindCSS + DaisyUI"],
+    ["EN", "This page is built using: React.js + Typescript, TailwindCSS + DaisyUI"],
+    ["DE", "Diese Seite ist erstellt mit: React.js + Typescript, TailwindCSS + DaisyUI"],
   ]);
 
   return (
@@ -60,7 +61,7 @@ export default function About() {
           <p className="text-secondary">{technologies.get(language)}</p>
           <br />
         </div>
-        <img className="h-[30rem] object-scale-down rounded-3xl" src={meFullSize} alt="Serhii Tyshchenko" />
+        <img className="w-1/4 object-scale-down rounded-3xl" src={me} alt="Serhii Tyshchenko" />
       </div>
     </div>
   );
