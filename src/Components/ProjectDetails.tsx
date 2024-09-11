@@ -1,7 +1,9 @@
 export default function ProjectDetails() {
   return (
     <div className="min-h-screen">
-      <p>ProjectDetails</p>
+      <div className=" flex justify-center items-center min-h-screen">
+        <p className="text-3xl italic">In development...</p>
+      </div>
     </div>
   );
 }
