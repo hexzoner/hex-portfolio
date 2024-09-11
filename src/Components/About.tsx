@@ -49,8 +49,8 @@ export default function About() {
   return (
     <div className="min-h-screen bg-base-100 ">
       <p className="text-3xl font-semibold pt-8">{aboutMe.get(language)}</p>
-      <div className="bg-base-100 flex justify-evenly pt-12 flex-wrap">
-        <div className="text-left md:w-1/3 w-3/4 flex flex-col justify-center">
+      <div className="bg-base-100 flex justify-evenly pt-12 flex-wrap mb-16">
+        <div className="text-left flex flex-col justify-center px-8 max-w-xl">
           <p className="text-3xl text-primary">{intro.get(language)}</p> <br></br>
           <p className="text-xl">{introTank.get(language)}</p>
           <br />
@@ -61,7 +61,7 @@ export default function About() {
           <p className="text-secondary">{technologies.get(language)}</p>
           <br />
         </div>
-        <img className="w-1/4 object-scale-down rounded-3xl" src={me} alt="Serhii Tyshchenko" />
+        <img className="max-w-64 md:max-w-md rounded-3xl " src={me} alt="Serhii Tyshchenko" />
       </div>
     </div>
   );
