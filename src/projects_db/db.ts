@@ -74,8 +74,8 @@ const projects: Project[] = [
     "https://i.gyazo.com/475f3b8d8fc81eda42cf073ddde1b194.png",
     "https://pokemon-battlegame.onrender.com/",
     [
-      new GitHubProject(RepoType["Frontend Repo"], "https://github.com/SebSchoeneberger/SnapTask-Fe"),
-      new GitHubProject(RepoType["Backend Repo"], "https://github.com/hexzoner/final-project-be"),
+      new GitHubProject(RepoType["Frontend Repo"], "https://github.com/ktwd52/pokemon-battlegame-fe"),
+      new GitHubProject(RepoType["Backend Repo"], "https://github.com/ktwd52/pokemon-battlegame-be"),
     ],
     ["React.js", "Vite", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
     [
@@ -94,7 +94,7 @@ const projects: Project[] = [
     "This is a movie website that fetches data from the TMDB API. The website provides a user-friendly interface for users to browse movies, view movie details, and search for movies.",
     "https://i.gyazo.com/cebd23f48200db23afeccbe5676ad5ff.jpg",
     "https://movie-diary-r.onrender.com/",
-    [new GitHubProject(RepoType["Frontend Repo"], "https://github.com/SebSchoeneberger/SnapTask-Fe")],
+    [new GitHubProject(RepoType["Frontend Repo"], "https://github.com/hexzoner/movies-website")],
     ["React.js", "Vite", "Tailwind CSS", "TMDB API"],
     [
       [
