@@ -66,6 +66,27 @@ const projects: Project[] = [
     ]
   ),
   new Project(
+    "Teppalu",
+    "Teppalu - a full-stack E-Commerce website, where users can browse different rugs, add them to wishlist and cart. The platform provides a comprehensive admin panel for managing taxonomy like colors,sizes and also products and view orders and users. The website is also offering a mobile-friendly responsive UI.",
+    "https://i.gyazo.com/8d3633e5da9a16898ee3a98ffada0052.png",
+    "https://hex-ecommerce-fe.onrender.com/",
+    [
+      new GitHubProject(RepoType["Frontend Repo"], "https://github.com/hexzoner/hex-eCommerce-fe"),
+      new GitHubProject(RepoType["Backend Repo"], "https://github.com/hexzoner/eCommerce-be"),
+    ],
+    ["React.js", "Typescript", "Vite", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "DaisyUI"],
+    [
+      [
+        "EN",
+        "Teppalu - a full-stack E-Commerce website, where users can browse different rugs, add them to their wishlist and cart. The platform provides an admin panel for managing product taxonomies like colors, sizes and also products and view orders and users. The website is also offering a mobile-friendly responsive UI.",
+      ],
+      [
+        "DE",
+        "Teppalu - eine Full-Stack-E-Commerce-Website, auf der Benutzer verschiedene Teppiche durchsuchen, sie ihrer Wunschliste und ihrem Warenkorb hinzufügen können. Die Plattform bietet ein Admin-Panel zur Verwaltung von Produkt-Taxonomien wie Farben, Größen und auch Produkten sowie zum Anzeigen von Bestellungen und Benutzern. Die Website bietet auch eine benutzerfreundliche, responsive Benutzeroberfläche.",
+      ],
+    ]
+  ),
+  new Project(
     "Pokemon game",
     `Simple Pokemon card game built with React, Vite, and Tailwind CSS.
      The game fetches data from the Pokemon API and allows users to battle against the computer.
