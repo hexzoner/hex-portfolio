@@ -45,6 +45,27 @@ class GitHubProject {
 
 const projects: Project[] = [
   new Project(
+    "Teppalu",
+    "Teppalu - a full-stack E-Commerce website, where users can browse different rugs, add them to wishlist and cart. The platform provides a comprehensive admin panel for managing taxonomy like colors,sizes and also products and view orders and users. The website is also offering a mobile-friendly responsive UI.",
+    "https://i.gyazo.com/9269b862c35c3cd76b5586bf838f4a35.jpg",
+    "https://teppalu.onrender.com/",
+    [
+      new GitHubProject(RepoType["Frontend Repo"], "https://github.com/hexzoner/hex-eCommerce-fe"),
+      new GitHubProject(RepoType["Backend Repo"], "https://github.com/hexzoner/eCommerce-be"),
+    ],
+    ["React.js", "Typescript", "Vite", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "DaisyUI"],
+    [
+      [
+        "EN",
+        "Teppalu - a full-stack E-Commerce website, where users can browse different rugs, add them to their wishlist and cart. The platform provides an admin panel for managing product taxonomies like colors, sizes and also products and view orders and users. The website is also offering a mobile-friendly responsive UI.",
+      ],
+      [
+        "DE",
+        "Teppalu - eine Full-Stack-E-Commerce-Website, auf der Benutzer verschiedene Teppiche durchsuchen, sie ihrer Wunschliste und ihrem Warenkorb hinzufügen können. Die Plattform bietet ein Admin-Panel zur Verwaltung von Produkt-Taxonomien wie Farben, Größen und auch Produkten sowie zum Anzeigen von Bestellungen und Benutzern. Die Website bietet auch eine benutzerfreundliche, responsive Benutzeroberfläche.",
+      ],
+    ]
+  ),
+  new Project(
     "SnapTask",
     "WBS Coding School final project - SnapTask is a versatile SaaS platform that uses QR code technology to streamline task management for businesses and households. This repository contains the frontend code for SnapTask, built using React, Vite, and Tailwind CSS. The platform provides a comprehensive admin dashboard for managing tasks, users, and areas, while also offering a mobile-friendly interface for staff to easily interact with tasks.",
     "https://i.gyazo.com/0fd67c66dac08d472af11cc1722f7d5d.png",
@@ -62,27 +83,6 @@ const projects: Project[] = [
       [
         "DE",
         "Das Ergebnis der engen, täglichen Zusammenarbeit von vier Teammitgliedern, das Abschlussprojekt der WBS Coding School, SnapTask, ist eine vielseitige SaaS-Plattform, die QR-Code-Technologie nutzt, um das Aufgabenmanagement für Unternehmen und Haushalte zu optimieren. Die Plattform bietet ein umfassendes Admin-Dashboard zur Verwaltung von Aufgaben, Benutzern und Bereichen und bietet gleichzeitig eine benutzerfreundliche Oberfläche für Mitarbeiter, um einfach mit Aufgaben zu interagieren.",
-      ],
-    ]
-  ),
-  new Project(
-    "Teppalu",
-    "Teppalu - a full-stack E-Commerce website, where users can browse different rugs, add them to wishlist and cart. The platform provides a comprehensive admin panel for managing taxonomy like colors,sizes and also products and view orders and users. The website is also offering a mobile-friendly responsive UI.",
-    "https://i.gyazo.com/8d3633e5da9a16898ee3a98ffada0052.png",
-    "https://hex-ecommerce-fe.onrender.com/",
-    [
-      new GitHubProject(RepoType["Frontend Repo"], "https://github.com/hexzoner/hex-eCommerce-fe"),
-      new GitHubProject(RepoType["Backend Repo"], "https://github.com/hexzoner/eCommerce-be"),
-    ],
-    ["React.js", "Typescript", "Vite", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "DaisyUI"],
-    [
-      [
-        "EN",
-        "Teppalu - a full-stack E-Commerce website, where users can browse different rugs, add them to their wishlist and cart. The platform provides an admin panel for managing product taxonomies like colors, sizes and also products and view orders and users. The website is also offering a mobile-friendly responsive UI.",
-      ],
-      [
-        "DE",
-        "Teppalu - eine Full-Stack-E-Commerce-Website, auf der Benutzer verschiedene Teppiche durchsuchen, sie ihrer Wunschliste und ihrem Warenkorb hinzufügen können. Die Plattform bietet ein Admin-Panel zur Verwaltung von Produkt-Taxonomien wie Farben, Größen und auch Produkten sowie zum Anzeigen von Bestellungen und Benutzern. Die Website bietet auch eine benutzerfreundliche, responsive Benutzeroberfläche.",
       ],
     ]
   ),
